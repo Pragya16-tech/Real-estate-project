@@ -38,7 +38,7 @@ body{
     /* grid-template-rows: repeat(5,1fr); */
     height: 450px;
     margin-top: 50px;
-    gap: 5px;
+    gap: 10px;
 }
 .heading{
     display: flex;
@@ -48,10 +48,12 @@ body{
     height: 400px;
     width: 290px;
     object-fit: cover;
+    border-radius: 25px;
 }
 #child2 img ,#child4 img{
     height: 300px;
     width: 250px;
+     border-radius: 25px;
 }
 .footer{
     display: grid;
@@ -80,4 +82,45 @@ li{
 .right h1{
     font-style: italic;
     font-size: 150px;
+}
+@media (max-width:576px) {
+    body{
+        overflow: scroll;
+    }
+    .header{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 730px;
+
+    }
+    .header .btn{
+        display: flex;
+        text-align: end;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        margin-left: 450px;
+                /* justify-content: center;
+        align-items: center; */
+        /* margin-left: 90px; */
+        /* background-color: #fff; */
+        height: fit-content;
+       
+    }
+    .child{
+        /* background: white; */
+    }
+    #child1 img , #child2 img ,#child3 img,#child4 img ,#child5 img{
+        /* height: 300px; */
+        width: 550px;
+        object-fit: cover;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        padding: 40px;
+        
+    }
 }
