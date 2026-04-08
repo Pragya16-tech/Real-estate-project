@@ -86,13 +86,19 @@ li{
 @media (max-width:576px) {
     body{
         overflow: scroll;
+        background-color: rgb(189, 169, 169);
     }
+
     .header{
         display: flex;
         justify-content: space-evenly;
         width: 100%;
-        gap: 730px;
-
+        gap: 790px;
+        
+    }
+    .header .logo h1{
+        color: white;
+        font-size: 80px;
     }
     .header .btn{
         display: flex;
@@ -101,26 +107,25 @@ li{
     .main{
         display: flex;
         flex-direction: column;
-        margin-left: 450px;
+        margin-left: 150px;
                 /* justify-content: center;
         align-items: center; */
         /* margin-left: 90px; */
         /* background-color: #fff; */
         height: fit-content;
+        color: white;
        
     }
-    .child{
-        /* background: white; */
-    }
     #child1 img , #child2 img ,#child3 img,#child4 img ,#child5 img{
-        /* height: 300px; */
-        width: 550px;
+        /* height: 700px; */
+        width: 1150px;
         object-fit: cover;
+        border-radius: 35px;
     }
     .footer{
         display: flex;
         flex-direction: row;
         padding: 40px;
-        
+        color: azure;
     }
 }
