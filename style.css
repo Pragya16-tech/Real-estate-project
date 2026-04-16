@@ -6,6 +6,7 @@
 body{
     background: #e3d69b;
     height: 100vh;
+    overflow-X: hidden;
   
 }
 .header{
@@ -38,7 +39,7 @@ body{
     /* grid-template-rows: repeat(5,1fr); */
     height: 450px;
     margin-top: 50px;
-    gap: 10px;
+    gap: 5px;
 }
 .heading{
     display: flex;
@@ -46,13 +47,13 @@ body{
 }
 #child1 img ,#child3 img ,#child5 img{
     height: 400px;
-    width: 290px;
+    width: 260px;
     object-fit: cover;
     border-radius: 25px;
 }
 #child2 img ,#child4 img{
     height: 300px;
-    width: 250px;
+    width: 260px;
      border-radius: 25px;
 }
 .footer{
